@@ -91,6 +91,12 @@
    "Preprints":
       [ 
          {
+            "title": "A Confidence-Based Approach for Balancing Fairness and Accuracy",
+            "authors": "Benjamin Fish, Jeremy Kun, Adam Lelkes",
+            "comments": "In review.",
+            "importance": 1
+         },
+         {
             "title": "Network installation and recovery: approximation lower bounds and faster exact formulations",
             "authors": "Alexander Gutfraind, Jeremy Kun, Adam Lelkes, Lev Reyzin",
             "link": "http://arxiv.org/abs/1411.3640",
