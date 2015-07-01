@@ -22,7 +22,9 @@ onecv-moderncv ../cv.json industry-resume.tex 3
 pdflatex industry-resume.tex
 cd ..
 
+mv .git /tmp/cvgit
 cd ..
 scp -r cv jkun2@math.uic.edu:~/public_html
 
 cd cv
+mv /tmp/cvgit .git
