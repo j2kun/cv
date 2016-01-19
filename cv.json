@@ -3,7 +3,7 @@
       [
          {"Name": "Jeremy Kun"},
          {"Thesis advisor": "Lev Reyzin"},
-         {"Research summary": "I am a theoretical computer scientist with broad interests, including complexity theory, graph theory and network science, learning theory, cryptography, combinatorics, and geometry. My research to date focuses on theoretical and applied graph theory."},
+         {"Research summary": "I am a theoretical computer scientist with broad interests, including complexity theory, graph theory and network science, learning theory, combinatorics, and geometry. My research to date focuses on theoretical and applied graph theory."},
          {"Email": "jkun2 /at/ uic.edu"}, 
          {"Mailing Address": "Mathematics Department. University of Illinois at Chicago. 851 S Morgan St. Chicago, IL 60607-7045"},
          {"Webpage": "http://math.uic.edu/~jkun2"}
@@ -27,7 +27,7 @@
           "importance": 1
          },
          {
-          "when": "2011", 
+          "when": "2010", 
           "institution": "Budapest Semesters in Mathematics", 
           "comments": "Graduated with honors.", 
           "importance": 2
@@ -36,11 +36,34 @@
    "Publications":
       [ 
          {
+            "title": "On the Computational Complexity of MapReduce",
+            "authors": "Benjamin Fish, Jeremy Kun, Adam Lelkes, Lev Reyzin, Gyorgy Turan",
+            "when": 2015,
+            "venue": "International Symposium on Distributed Computing",
+            "short-venue": "DISC15",
+            "link": "http://arxiv.org/abs/1410.0245",
+            "abstract": "In this paper we study the MapReduce Class (MRC) defined by Karloﬀ et al., which is a formal complexity-theoretic model of MapReduce. We show that constant-round MRC computations can decide regular languages and simulate sublogarithmic space-bounded Turing machines. In addition, we prove hierarchy theorems for MRC under certain complexity-theoretic assumptions. These theorems show that sufficiently increasing the number of rounds or the amount of time per processor strictly increases the computational power of MRC. Our work lays the foundation for further analysis relating MapReduce to established complexity classes. Our results also hold for Valiant's BSP model of parallel computation and the MPC model of Beame et al.",
+            "importance": 1,
+            "bibtex": "None yet"
+         },
+         {
+            "title": "Network Installation Under Convex Costs",
+            "authors": "Alexander Gutfraind, Jeremy Kun, Adam Lelkes, Lev Reyzin",
+            "when": 2015,
+            "venue": "Journal of Complex Networks",
+            "short-venue": "JCN15",
+            "link": "http://comnet.oxfordjournals.org/cgi/content/abstract/cnv020?ijkey=ZiDO26VV0vKrRIO&keytype=ref",
+            "abstract": "We study the Neighbour-Aided Network Installation Problem (NANIP) introduced previously which asks for a minimal cost ordering of the nodes of a graph, where the cost of visiting a node is a function of the number of its neighbours that have already been visited. This problem has applications in resource management and disaster recovery. In this paper, we analyse the computational hardness of NANIP. In particular we show that this problem is NP-hard even when restricted to convex decreasing cost functions, give a linear approximation lower bound for the greedy algorithm, and prove a general sub-constant approximation lower bound. Then we give a new integer programming formulation of NANIP and empirically observe its speedup over the original integer programme.",
+            "importance": 1,
+            "bibtex": "@article{GutfraindKLR15,\n author = {Gutfraind, Alexander and Kun, Jeremy and Lelkes, {\\'{A}}d{\\'{a}}m D{\\'{a}}niel and Reyzin, Lev}, \n title = {Network installation under convex costs}, \n year = {2015}, \n doi = {10.1093/comnet/cnv020}, \n journal = {Journal of Complex Networks}}"
+         },
+         {
             "title": "Fair Boosting: a Case Study",
             "authors": "Benjamin Fish, Jeremy Kun, Adam Lelkes",
             "when": 2015,
             "venue": "International Conference on Machine Learning Workshop on Fairness, Accountability, and Transparency in Machine Learning",
             "short-venue": "ICML-WFATML15",
+            "link": "http://www.fatml.org/papers/Fish_Kun_Lelkes.pdf",
             "abstract": "We study the classical AdaBoost algorithm in the context of fairness. We use the Census Income Dataset (Lichman, 2013) as a case study. We empirically evaluate the bias and error of four variants of AdaBoost relative to an unmodified AdaBoost baseline, and study the trade-offs between reducing bias and maintaining low error. We further define a new notion of fairness and measure it for all of our methods. Our proposed method, modifying the hypothesis output by AdaBoost by shifting the decision boundary for the protected group, outperforms the state of the art for the census dataset.",
             "importance": 1
          },
@@ -50,9 +73,10 @@
             "when": 2015,
             "venue": "Conference on Learning Theory",
             "short-venue": "COLT15",
+            "link": "http://jmlr.org/proceedings/papers/v40/Kun15.html",
             "abstract": "We pose an open problem on the complexity of learning the behavior of a quantum circuit with value injection queries. We define the learning model for  quantum circuits and give preliminary results.  Using the test-path lemma of Angluin et al. (2009a), we show that new ideas are likely needed to tackle value injection queries for the quantum setting.",
             "importance": 1,
-            "bibtex": "None yet."
+            "bibtex": "@inproceedings{DBLP:conf/colt/KunR15, \n author= {Jeremy Kun and Lev Reyzin}, \n title = {Open Problem: Learning Quantum Circuits with Queries}, \n booktitle = {Proceedings of The 28th Conference on Learning Theory, {COLT} 2015, Paris, France, July 3-6, 2015}, \n pages= {1767--1769},\n year = {2015}, \n url = {http://jmlr.org/proceedings/papers/v40/Kun15.html}}"
          },
          {
             "title": "A Boosting Approach to Learning Graph Representations",
@@ -77,6 +101,17 @@
             "bibtex": "@inproceedings{KPR13, \n author = {Jeremy Kun and Brian Powers and Lev Reyzin}, \n title = {Anti-coordination Games and Stable Graph Colorings}, \n booktitle = {SAGT}, \n year = {2013}, \n pages = {122-133}, \n ee = {http://dx.doi.org/10.1007/978-3-642-41392-6_11}\n}"
          },
          {
+            "title": "A Confidence-Based Approach for Balancing Fairness and Accuracy",
+            "authors": "Benjamin Fish, Jeremy Kun, Adam Lelkes",
+            "venue": "SIAM International Symposium on Data Mining", 
+            "short-venue": "SDM16",
+            "when": "2016",
+            "link": "",
+            "abstract": "We study three classical machine learning algorithms in the context of algorithmic fairness: adaptive boosting, support vector machines, and logistic regression. Our goal is to maintain the high accuracy of these learning algorithms while reducing the degree to which they discriminate against individuals because of their membership in a protected group. Our first contribution is a method for achieving fairness by shifting the decision boundary for the protected group. The method is based on the theory of margins for boosting. We empirically compare our method with other variants of these learning algorithms as well as results in previous papers in the fairness literature. Our method, in addition to outperforming many of the prior algorithms in terms of accuracy and low discrimination, also allows for a fast and transparent quantification of the trade-off between bias and error. Our second contribution addresses the shortcomings of the bias-error trade-off studied in most of the algorithmic fairness literature. We demonstrate that even hopelessly naive modifications of a biased algorithm, which cannot be reasonably said to be 'fair,' can still achieve low bias and high accuracy. To help to distinguish between these naive algorithms and more sensible algorithms we propose a new measure of fairness, called resilience to random bias (RRB). We demonstrate that RRB distinguishes well between our naive and sensible fairness algorithms. RRB together with bias and accuracy provides a more complete picture of the fairness of an algorithm.",
+            "importance": 1,
+            "bibtex": "None yet."
+         },
+         {
             "title": "On Coloring Resilient Graphs",
             "authors": "Jeremy Kun, Lev Reyzin",
             "when": 2014,
@@ -91,28 +126,9 @@
    "Preprints":
       [ 
          {
-            "title": "A Confidence-Based Approach for Balancing Fairness and Accuracy",
-            "authors": "Benjamin Fish, Jeremy Kun, Adam Lelkes",
-            "comments": "In review.",
-            "importance": 1
-         },
-         {
-            "title": "Network Installation Under Convex Costs",
-            "authors": "Alexander Gutfraind, Jeremy Kun, Adam Lelkes, Lev Reyzin",
-            "link": "http://arxiv.org/abs/1411.3640",
-            "comments": "To appear in Journal of Complex Networks.",
-            "importance": 1
-         },
-         {
-            "title": "On the Computational Complexity of MapReduce",
-            "authors": "Benjamin Fish, Jeremy Kun, Adam Lelkes, Lev Reyzin, Gyorgy Turan",
-            "link": "http://arxiv.org/abs/1410.0245",
-            "comments": "In review.",
-            "importance": 1
-         },
-         {
             "title": "Information Monitoring in Routing Networks",
             "authors": "David Burstein, Franklin Kenter, Jeremy Kun, Feng Shi",
+            "link": "http://arxiv.org/abs/1507.05206",
             "comments": "In review.",
             "importance": 1
          },
@@ -128,14 +144,42 @@
       [
          {
             "title": "Information Monitoring in Routing Networks",
-            "venue": "SIAM Workshop on Network Science",
+            "comments": "SIAM Workshop on Network Science",
             "when": "2015",
-            "importance": 1,
-            "label": "Best student poster award, $100 cash prize"
+            "importance": 1
          }
       ],
    "Talks":
       [
+         {
+            "title": "Resilience and new approaches to approximate graph coloring",
+            "venue": "Theory Seminar, North Carolina State University",
+            "when": "2015",
+            "importance": 1,
+            "label": "Research talk"
+         },
+         {
+            "title": "A Gentle Introduction to Learning Theory",
+            "venue": "Graduate Student Colloquium, University of Illinois at Chicago",
+            "when": "2015",
+            "importance": 2,
+            "label": "Graduate student talk"
+         },
+         {
+            "title": "Eigenfaces: using linear algebra to recognize faces",
+            "venue": "Undergraduate Math Club, Wheaton College",
+            "when": "2015",
+            "importance": 3,
+            "label": "Undergraduate student talk"
+         },
+         {
+            "title": "What Can Algorithms Tell Us About Life, Love, and Happiness?",
+            "venue": "Moraine Valley Community College STEM Talks",
+            "when": "2015",
+            "importance": 1,
+            "link": "https://www.youtube.com/watch?v=JH4DOjYX59Y",
+            "label": "General audience talk"
+         },
          {
             "title": "On Resiliently Colorable Graphs",
             "venue": "Computer Science Seminar, University of Illinois at Chicago",
@@ -190,35 +234,35 @@
             "venue": "Undergraduate Math Club, University of Illinois at Chicago",
             "when": "2014",
             "importance": 3,
-            "label": "Undergrad talk"
+            "label": "Undergraduate student talk"
          },
          {
             "title": "Classic Nintendo Games are NP-Hard",
             "venue": "Undergraduate Math Club, University of Illinois at Chicago",
             "when": "2013",
             "importance": 3,
-            "label": "Undergrad talk"
+            "label": "Undergraduate student talk"
          },
          {
             "title": "PageRank and the Billion-Dollar Eigenvector",
             "venue": "Undergraduate Math Club, University of Illinois at Chicago",
             "when": "2012",
             "importance": 3,
-            "label": "Undergrad talk"
+            "label": "Undergraduate student talk"
          },
          {
             "title": "Eigenfaces: Linear Algebra for Facial Recognition",
             "venue": "Undergraduate Math Club, University of Illinois at Chicago",
             "when": "2011",
             "importance": 3,
-            "label": "Undergrad talk"
+            "label": "Undergraduate student talk"
          },
          {
             "title": "How to Send Secret Messages (RSA)",
             "venue": "'Math and Snacks,' University of Illinois at Chicago",
             "when": "2015",
             "importance": 3,
-            "label": "Undergrad talk"
+            "label": "Undergraduate student talk"
          },
          {
             "title": "Elliptic Curves, Projective Geometry, and Python",
@@ -308,10 +352,24 @@
    "Service":
       [
          {
+            "title": "Reviewer",
+            "event": "ALT 2015",
+            "organization": "Algorithmic Learning Theory",
+            "when": "2015",
+            "importance": 1
+         },
+         {
             "title": "Organizer",
             "event": "Graduate Student Theoretical Computer Science Seminar",
             "organization": "University of Illinois at Chicago",
             "when": "2013 - Present",
+            "importance": 2
+         },
+         {
+            "title": "Organizer",
+            "event": "Graduate Student Colloquium",
+            "organization": "University of Illinois at Chicago",
+            "when": "2015",
             "importance": 2
          },
          {
@@ -334,13 +392,21 @@
          {
             "course": "Calculus 1",
             "institution": "University of Illinois at Chicago",
-            "when": "Fall 2011, Fall 2013",
+            "when": "Fall 2011, Fall 2013, Fall 2015",
             "type": "TA",
             "comments": "Led a discussion session twice weekly.",
-            "importance": 2 
+            "importance": 1
          },
          {
-            "course": "Intro Comp Sci",
+            "course": "Differential Equations",
+            "institution": "University of Illinois at Chicago",
+            "when": "Spring 2016",
+            "type": "TA",
+            "comments": "Led a discussion session once weekly.",
+            "importance": 1 
+         },
+         {
+            "course": "Introduction to Mathematical Computer Science",
             "institution": "University of Illinois at Chicago",
             "when": "Spring 2012, Fall 2012, Spring 2013",
             "type": "TA",
@@ -357,6 +423,14 @@
             "when": "2014",
             "monetary-value": "$25,000",
             "importance": 1
+         },
+         {
+            "title": "Best Student Poster Award",
+            "granter": "SIAM Network Science 15",
+            "comments": "For the poster 'Information Monitoring in Routing Networks'",
+            "when": "2015",
+            "monetary-value": "$100",
+            "importance": 2
          },
          {
             "title": "Charles J. Hanks Excellence in Mathematics Award",
@@ -377,7 +451,7 @@
             "granter": "Association for Computing Machinery",
             "comments": "Three-person team programming tasks",
             "when": "2009",
-            "importance": 3
+            "importance": 4
          },
          {
             "title": "Eagle Scout Award",
@@ -424,7 +498,7 @@
          },
          {
             "name": "Version Control",
-            "title": "Git, Subversion",
+            "title": "Git",
             "importance": 3
          }
       ],
@@ -436,14 +510,6 @@
             "organization": "Chicago Public Schools",
             "type": "Webmaster",
             "when": "2012 - Present",
-            "importance": 2
-         }, 
-         {
-            "title": "Math Tweets",
-            "organization": "No Starch Press",
-            "type": "Technical Reviewer",
-            "comments": "Publication date TBD",
-            "when": "2014 - Present",
             "importance": 2
          }, 
          {
@@ -461,7 +527,7 @@
             "name": "Blog",
             "title": "Math Intersect Programming",
             "link": "http://jeremykun.com",
-            "comments": "In-depth presentation of technical topics, with full implementations in code. As of February 2015: 202 published posts, 2000 word average post length, 2 million page views since June 2011.",
+            "comments": "In-depth presentation of technical topics with full implementations in code. As of August 2015: 212 published posts, 2000 word average post length, over 2 million page views since June 2011.",
             "importance": 1
          }
       ]

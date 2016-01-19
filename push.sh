@@ -14,6 +14,8 @@ cd ..
 
 cd research-only 
 onecv-website ../cv.json research.html 3
+onecv-moderncv ../cv.json research.tex 3
+pdflatex research.tex
 cd ..
 
 cd industry-resume 
