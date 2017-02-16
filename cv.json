@@ -2,16 +2,14 @@
    "Personal":
       [
          {"Name": "Jeremy Kun"},
-         {"Thesis advisor": "Lev Reyzin"},
-         {"Research summary": "I am a theoretical computer scientist with broad interests, including complexity theory, graph theory and network science, learning theory, combinatorics, and geometry. My research to date focuses on theoretical and applied graph theory."},
-         {"Email": "jkun2 /at/ uic.edu"}, 
-         {"Mailing Address": "Mathematics Department. University of Illinois at Chicago. 851 S Morgan St. Chicago, IL 60607-7045"},
-         {"Webpage": "http://math.uic.edu/~jkun2"}
+         {"Research summary": "I am a theoretical computer scientist with broad interests, including complexity theory, graph theory and network science, learning theory, combinatorics, and geometry. My research to date focuses on theoretical and applied graph theory. I currently work as a bitcoin engineer at 21 Inc."},
+         {"Email": "jeremy /at/ 21.co"}, 
+         {"Webpage": "https://jeremykun.com"}
       ],
    "Education": 
       [
          {
-          "when": "2011 - Present", 
+          "when": "2011 - 2016", 
           "institution": "University of Illinois at Chicago", 
           "degree": "Ph.D", 
           "subject": "Mathematics", 
@@ -44,7 +42,7 @@
             "link": "http://arxiv.org/abs/1410.0245",
             "abstract": "In this paper we study the MapReduce Class (MRC) defined by Karloﬀ et al., which is a formal complexity-theoretic model of MapReduce. We show that constant-round MRC computations can decide regular languages and simulate sublogarithmic space-bounded Turing machines. In addition, we prove hierarchy theorems for MRC under certain complexity-theoretic assumptions. These theorems show that sufficiently increasing the number of rounds or the amount of time per processor strictly increases the computational power of MRC. Our work lays the foundation for further analysis relating MapReduce to established complexity classes. Our results also hold for Valiant's BSP model of parallel computation and the MPC model of Beame et al.",
             "importance": 1,
-            "bibtex": "None yet"
+            "bibtex": ""
          },
          {
             "title": "Network Installation Under Convex Costs",
@@ -112,6 +110,16 @@
             "bibtex": "None yet."
          },
          {
+            "title": "Interception in Distance-Vector Routing Networks",
+            "authors": "David Burstein, Franklin Kenter, Jeremy Kun, Feng Shi",
+            "link": "http://arxiv.org/abs/1507.05206",
+            "when": "2016",
+            "venue": "Journal of Complex Networks",
+            "short-venue": "JCN",
+            "abstract": "Despite the large effort devoted to cybersecurity research over the last decades, cyber intrusions and attacks are still increasing. With respect to routing networks, route hijacking has highlighted the need to reexamine the existing protocols that govern traffic routing. In particular, our pri- mary question is how the topology of a network affects the susceptibility of a routing protocol to endogenous route misdirection. In this paper we define and analyze an abstract model of traffic interception (i.e. eavesdropping) in distance-vector routing networks. Specifically, we study al- gorithms that measure the potential of groups of dishonest agents to divert traffic through their infrastructure under the constraint that messages must reach their intended destinations. We relate two variants of our model based on the allowed kinds of lies, define strategies for colluding agents, and prove optimality in special cases. In our main theorem we derive a provably optimal monitoring strategy for subsets of agents in which no two are adjacent, and we extend this strategy to the general case. Finally, we use our results to analyze the susceptibility of real and synthetic networks to endogenous traffic interception. In the Autonomous Systems (AS) graph of the United States, we show that compromising only 18 random nodes in the AS graph surprisingly captures 10% of all traffic paths in the network in expectation when a distance-vector routing protocol is in use.",
+            "importance": 1
+         },
+         {
             "title": "On Coloring Resilient Graphs",
             "authors": "Jeremy Kun, Lev Reyzin",
             "when": 2014,
@@ -125,13 +133,6 @@
       ],
    "Preprints":
       [ 
-         {
-            "title": "Information Monitoring in Routing Networks",
-            "authors": "David Burstein, Franklin Kenter, Jeremy Kun, Feng Shi",
-            "link": "http://arxiv.org/abs/1507.05206",
-            "comments": "In review.",
-            "importance": 1
-         },
          {
             "title": "Locally Boosted Graph Aggregation for Community Detection",
             "authors": "Rajmonda Caceres, Kevin Carter, Jeremy Kun",
@@ -317,6 +318,14 @@
    "Work Experience":
       [ 
          {
+            "title": "Bitcoin Protocol Engineer",
+            "organization": "21 Inc.",
+            "type": "Full time",
+            "when": "2016 - present",
+            "comments": "Startup including roles as an open source maintainer for a bitcoin wallet and software library (two1-python), a backend engineer, a data scientist, and a mobile developer.",
+            "importance": 1
+         }, 
+         {
             "title": "Graduate Research Assistant",
             "organization": "MIT Lincoln Laboratory",
             "type": "Part time research assistantship",
@@ -483,13 +492,18 @@
          },
          {
             "name": "Competent Languages",
-            "title": "Python, Java, C, C++, Haskell, Racket, HTML/CSS, Mathematica",
+            "title": "Python, Java, C, C++, Haskell, Racket, HTML/CSS, Mathematica, Javascript/Node/ES6",
             "importance": 2
          },
          {
             "name": "Familiar Languages",
-            "title": "Javascript, Perl, Bash, PHP, SQL, R",
+            "title": "R, Perl, Bash, PHP, SQL",
             "importance": 2
+         },
+         {
+            "name": "Frameworks",
+            "title": "Django, React Native",
+            "importance": 3
          },
          {
             "name": "IDEs",
@@ -527,7 +541,7 @@
             "name": "Blog",
             "title": "Math Intersect Programming",
             "link": "http://jeremykun.com",
-            "comments": "In-depth presentation of technical topics with full implementations in code. As of August 2015: 212 published posts, 2000 word average post length, over 2 million page views since June 2011.",
+            "comments": "In-depth presentation of technical topics with full implementations in code. As of February 2017: 236 published posts, 2000 word average post length, over 3.5 million page views since June 2011.",
             "importance": 1
          }
       ]
