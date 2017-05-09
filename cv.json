@@ -2,7 +2,7 @@
    "Personal":
       [
          {"Name": "Jeremy Kun"},
-         {"Research summary": "I am a theoretical computer scientist with broad interests, including complexity theory, graph theory and network science, learning theory, combinatorics, and geometry. My research to date focuses on theoretical and applied graph theory. I currently work as a bitcoin engineer at 21 Inc."},
+         {"Research summary": "I am a theoretical computer scientist with broad interests, including complexity theory, graph theory and network science, learning theory, combinatorics, and geometry. My research to date focuses on theoretical and applied graph theory. I currently work as a backend engineer at 21 Inc."},
          {"Email": "jeremy /at/ 21.co"}, 
          {"Webpage": "https://jeremykun.com"}
       ],
@@ -329,7 +329,7 @@
    "Work Experience":
       [ 
          {
-            "title": "Bitcoin Protocol Engineer",
+            "title": "Backend Engineer",
             "organization": "21 Inc",
             "type": "Full time",
             "when": "2016 - present",
@@ -510,21 +510,6 @@
             "name": "Familiar Languages",
             "title": "R, Perl, Bash, PHP, SQL",
             "importance": 2
-         },
-         {
-            "name": "Frameworks",
-            "title": "Django, React Native",
-            "importance": 3
-         },
-         {
-            "name": "IDEs",
-            "title": "Vim, Eclipse",
-            "importance": 3
-         },
-         {
-            "name": "Version Control",
-            "title": "Git",
-            "importance": 3
          }
       ],
    "Contract Work":
