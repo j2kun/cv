@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  9 MAY 2017 08:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  17 MAY 2017 08:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1316,11 +1316,11 @@ Package rerunfilecheck Info: File `cv.out' has not changed.
 (rerunfilecheck)             Checksum: EF807750CF8C21B9E3ED2F41821353BC;965.
  ) 
 Here is how much of TeX's memory you used:
- 28473 strings out of 493014
- 524816 string characters out of 6133351
+ 28471 strings out of 493014
+ 524796 string characters out of 6133351
  586902 words of memory out of 5000000
  31549 multiletter control sequences out of 15000+600000
- 58695 words of font info for 83 fonts, out of 8000000 for 9000
+ 58612 words of font info for 82 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  69i,12n,58p,10383b,337s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}</usr/local/
@@ -1331,7 +1331,7 @@ pe1/public/lm/lmr17.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/
 lm/lmro10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmro17.
 pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/marvosym/marvosym.pf
 b>
-Output written on cv.pdf (4 pages, 189326 bytes).
+Output written on cv.pdf (4 pages, 189597 bytes).
 PDF statistics:
  120 PDF objects out of 1000 (max. 8388607)
  105 compressed objects within 2 object streams

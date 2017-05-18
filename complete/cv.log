@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  9 MAY 2017 08:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  17 MAY 2017 08:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1316,11 +1316,11 @@ Package rerunfilecheck Info: File `cv.out' has not changed.
 (rerunfilecheck)             Checksum: EF50FEFC58EE79D96048BDD81F519B4F;1301.
  ) 
 Here is how much of TeX's memory you used:
- 28486 strings out of 493014
- 524985 string characters out of 6133351
+ 28484 strings out of 493014
+ 524965 string characters out of 6133351
  586902 words of memory out of 5000000
  31554 multiletter control sequences out of 15000+600000
- 61891 words of font info for 86 fonts, out of 8000000 for 9000
+ 61808 words of font info for 85 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  69i,12n,58p,10383b,337s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}</usr/local/
@@ -1331,7 +1331,7 @@ type1/public/lm/lmr12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/publi
 c/lm/lmr17.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmro10
 .pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmro17.pfb></usr
 /local/texlive/2016/texmf-dist/fonts/type1/public/marvosym/marvosym.pfb>
-Output written on cv.pdf (4 pages, 220449 bytes).
+Output written on cv.pdf (4 pages, 220425 bytes).
 PDF statistics:
  139 PDF objects out of 1000 (max. 8388607)
  123 compressed objects within 2 object streams
