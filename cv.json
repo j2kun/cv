@@ -33,6 +33,17 @@
    "Publications":
       [ 
          {
+            "title": "Treedepth Bounds in Linear Colorings",
+            "authors": "Jeremy Kun, Michael P. O'Brien, Blair D. Sullivan",
+            "when": 2018,
+            "venue": "44th International Workshop on Graph-Theoretic Concepts in Computer Science",
+            "short-venue": "WG18",
+            "link": "https://arxiv.org/abs/1802.09665",
+            "abstract": "Low-treedepth colorings are an important tool for algorithms that exploit structure in classes of bounded expansion; they guarantee subgraphs that use few colors are guaranteed to have bounded treedepth. These colorings have an implicit tradeoff between the total number of colors used and the treedepth bound, and prior empirical work suggests that the former dominates the run time of existing algorithms in practice. We introduce p-linear colorings as an alternative to the commonly used p-centered colorings. They can be efficiently computed in bounded expansion classes and use at most as many colors as p-centered colorings. Although a set of k<p colors from a p-centered coloring induces a subgraph of treedepth at most k, the same number of colors from a p-linear coloring may induce subgraphs of larger treedepth. A simple analysis of this treedepth bound shows it cannot exceed 2k, but no graph class is known to have treedepth more than 2k. We establish polynomial upper bounds via constructive coloring algorithms in trees and intervals graphs, and conjecture that a polynomial relationship is in fact the worst case in general graphs. We also give a co-NP-completeness reduction for recognizing p-linear colorings and discuss ways to overcome this limitation in practice.",
+            "importance": 1,
+            "bibtex": ""
+         },
+         {
             "title": "Graphs, New Models, and Complexity",
             "authors": "Jeremy Kun",
             "when": 2016,
