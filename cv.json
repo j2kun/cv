@@ -328,11 +328,19 @@
    "Work Experience":
       [ 
          {
-            "title": "Backend Engineer",
-            "organization": "21 Inc",
+            "title": "Software Engineer",
+            "organization": "Google, Inc.",
             "type": "Full time",
-            "when": "2016 - present",
-            "comments": "Built the Django backend for a task marketplace, including surveys, branching task pipelines, and automated reviews. Additional roles building an elasticsearch integration, doing ad hoc data science, maintaining an open-source bitcoin wallet (two1-python), and a mobile developer.",
+            "when": "2017 - Present",
+            "comments": "Engineer focusing on resource planning and optimization. Worked on large integer linear programs for optimizing resource allocation in Google's datacenter fleet. Applied machine learning to anomaly detection problems therein.",
+            "importance": 1
+         }, 
+         {
+            "title": "Backend Engineer",
+            "organization": "21, Inc.",
+            "type": "Full time",
+            "when": "2016 - 2017",
+            "comments": "Acquired as Earn.com by Coinbase in 2018-04. Built the Django backend for a task marketplace, including surveys, branching task pipelines, and automated reviews. Additional roles building an elasticsearch integration, doing ad hoc data science, maintaining an open-source bitcoin wallet (two1-python), and a mobile developer.",
             "importance": 1
          }, 
          {
@@ -545,7 +553,7 @@
             "title": "Math Intersect Programming",
             "link": "http://jeremykun.com",
             "comments": "In-depth presentation of technical topics with full implementations in code. As of February 2017: 236 published posts, 2000 word average post length, over 3.5 million page views since June 2011.",
-            "importance": 1
+Bitcoin            "importance": 1
          }
       ]
 }
