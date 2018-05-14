@@ -528,7 +528,15 @@
             "comments": "Publication date: 2015-05-25",
             "when": "2014 - 2015",
             "importance": 2
-         } 
+         },
+         {
+            "title": "Impractical Python",
+            "organization": "No Starch Press",
+            "type": "Technical Reviewer",
+            "comments": "Publication date: 2018-08-07",
+            "when": "2018",
+            "importance": 2
+         },
       ],
    "Other":
       [
