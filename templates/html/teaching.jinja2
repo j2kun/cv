@@ -1,0 +1,13 @@
+<td>{{entry.course}}</td>
+<td>
+    <div>
+        {{entry.type}}, {{entry.institution}}, {{entry.when}}
+    </div>
+    <div>
+    {% if entry.comments %}
+    <span class="small-details">
+         {{ entry.comments }}.
+    </span>
+    </div>
+    {% endif %}
+</td>

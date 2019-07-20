@@ -1,0 +1,14 @@
+<td>{{ entry.when }}</td>
+<td>
+    <div>
+        <a href="{{entry.link}}">{{entry.title}}</a>. {{entry.authors}}.
+        {% if entry.venue %} <em>{{entry.venue}}</em>. {% endif %}
+    </div>
+    {% if entry.comments %}
+    <div>
+    <span class="small-details">
+         {{ entry.comments }}
+    </span>
+    </div>
+    {% endif %}
+</td>

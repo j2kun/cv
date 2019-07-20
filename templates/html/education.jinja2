@@ -1,0 +1,22 @@
+<td>{{ entry.when }}</td>
+<td>
+  {% if entry.degree %}
+    <div>
+    {{ entry.degree }} in {{ entry.subject }}.
+    </div>
+    <div>
+      <span class="small-details">
+      {{ entry.institution }}. {% if entry.comments %} {{ entry.comments }} {% endif %}
+      </span>
+    </div>
+  {% else %}
+    <div>
+    {{ entry.institution }}.
+    </div>
+    <div>
+      <span class="small-details">
+      {% if entry.comments %} {{ entry.comments }} {% endif %}
+      </span>
+    </div>
+  {% endif %}
+</td>

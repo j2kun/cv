@@ -1,0 +1,26 @@
+{% if entry.when %}
+  <td>{{ entry.when }}</td>
+{% elif entry.name %}
+  <td>{{ entry.name }}</td>
+{% else %}
+  <td></td>
+{% endif %}
+
+<td>
+<div>
+{% if entry.title %}
+  {% if entry.link %}
+    <a href={{ entry.link }}>{{ entry.title }}</a>
+  {% else %}
+    {{ entry.title }}
+  {% endif %}
+{% endif %}
+</div>
+{% if entry.comments %}
+<div>
+<span class="small-details">
+     {{ entry.comments }}.
+</span>
+</div>
+{% endif %}
+</td>

@@ -1,0 +1,18 @@
+<td>{{entry.when}}</td>
+<td>
+    <div>
+        {{entry.title}}.
+    </div>
+    <div>
+    <span class="small-details">
+         {{ entry.comments }}. Granted by {{ entry.granter }}.
+    </span>
+    </div>
+    {% if entry["monetary-value"] %}
+    <div>
+    <span class="small-details">
+         Monetary value of {{ entry["monetary-value"] }}.
+    </span>
+    </div>
+    {% endif %}
+</td>

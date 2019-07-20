@@ -1,0 +1,13 @@
+<td></td>
+<td>
+    <div>
+        {{entry.title}}. {{entry.authors}}.
+    </div>
+    {% if entry.comments %}
+    <div>
+    <span class="small-details">
+         {{ entry.comments }}
+    </span>
+    </div>
+    {% endif %}
+</td>

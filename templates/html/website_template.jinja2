@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+   <meta name="description" content="{{ header.Name }}'s Resume">
+   <title>{{ header.Name }} &#8212; Resume</title>
+   <link href='http://fonts.googleapis.com/css?family=Lato:300,700' rel='stylesheet' type='text/css'>
+   <style>
+{{ style }}
+   </style>
+</head>
+<body>
+
+<div id="body">
+   <div id="main">
+      <div class="header">
+        <h1>{{ header.Name }}</h1>
+      </div>
+      <div class="cv-sections">
+        {% for section in sections %}
+          {% if (not ordered_section_names or section.section_name in ordered_section_names) and section.section_entries %}
+           <div class="cv-section">
+             <h3 class="cv-section-title">{{ section.section_name }}</h3>
+              <table class="cv-section-body">
+                {% for entry in section.section_entries %}
+                {% if importance_threshold and entry.importance <= importance_threshold %}
+                <tr class="cv-item">
+                  {% include templates[section.section_name] %}
+                </tr>
+                {% endif %}
+                {% endfor %}
+              </table>
+           </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+   </div>
+</div>
+</body>
+</html>
