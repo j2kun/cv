@@ -1,0 +1,10 @@
+\cventry{ {{entry.when}} }
+  { {{ entry.title }} }
+  { {{ entry.comments }} }
+  {Granted by {{ entry.granter }} }
+  {}
+  {% if "monetary-value" in entry %}
+  {Monetary value of {{ entry["monetary-value"].replace('$', '\\$') }} }
+  {% else %}
+  {}
+  {% endif %}

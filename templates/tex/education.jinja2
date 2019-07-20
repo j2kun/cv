@@ -1,0 +1,15 @@
+{% if entry.degree %}
+\cventry{ {{ entry.when }} }
+  { {{ entry.institution }} }
+  {}
+  { {{ entry.degree }} in {{ entry.subject }} }
+  {}
+  { {{ entry.comments }} }
+{% else %}
+\cventry{ {{ entry.when }} }
+  { {{ entry.institution }} }
+  {}
+  {}
+  {}
+  { {{ entry.comments }} }
+{% endif %}
