@@ -1,570 +1,601 @@
 {
-   "Personal":
-      [
-         {"Name": "Jeremy Kun"},
-         {"Research summary": "I am a theoretical computer scientist with broad interests, including complexity theory, network science, and learning theory. My research to date focuses on theoretical and applied graph theory (network science). I currently work as a backend engineer at 21 Inc."},
-         {"Email": "jeremy /at/ 21.co"}, 
-         {"Webpage": "https://jeremykun.com"}
-      ],
-   "Education": 
-      [
-         {
-          "when": "2011 - 2016", 
-          "institution": "University of Illinois at Chicago", 
-          "degree": "Ph.D", 
-          "subject": "Mathematics", 
-          "importance": 1
-         },
-         {
-          "when": "2007 - 2011", 
-          "institution": "California Polytechnic State University", 
-          "degree": "B.S.", 
-          "subject": "Mathematics, Minor in Computer Science",
-          "comments": "Magna Cum Laude.", 
-          "importance": 1
-         },
-         {
-          "when": "2010", 
-          "institution": "Budapest Semesters in Mathematics", 
-          "comments": "Graduated with honors.", 
-          "importance": 2
-         }
-      ],
-   "Publications":
-      [ 
-         {
-            "title": "Treedepth Bounds in Linear Colorings",
-            "authors": "Jeremy Kun, Michael P. O'Brien, Blair D. Sullivan",
-            "when": 2018,
-            "venue": "44th International Workshop on Graph-Theoretic Concepts in Computer Science",
-            "short-venue": "WG18",
-            "link": "https://arxiv.org/abs/1802.09665",
-            "abstract": "Low-treedepth colorings are an important tool for algorithms that exploit structure in classes of bounded expansion; they guarantee subgraphs that use few colors are guaranteed to have bounded treedepth. These colorings have an implicit tradeoff between the total number of colors used and the treedepth bound, and prior empirical work suggests that the former dominates the run time of existing algorithms in practice. We introduce p-linear colorings as an alternative to the commonly used p-centered colorings. They can be efficiently computed in bounded expansion classes and use at most as many colors as p-centered colorings. Although a set of k<p colors from a p-centered coloring induces a subgraph of treedepth at most k, the same number of colors from a p-linear coloring may induce subgraphs of larger treedepth. A simple analysis of this treedepth bound shows it cannot exceed 2k, but no graph class is known to have treedepth more than 2k. We establish polynomial upper bounds via constructive coloring algorithms in trees and intervals graphs, and conjecture that a polynomial relationship is in fact the worst case in general graphs. We also give a co-NP-completeness reduction for recognizing p-linear colorings and discuss ways to overcome this limitation in practice.",
-            "importance": 1,
-            "bibtex": ""
-         },
-         {
-            "title": "Graphs, New Models, and Complexity",
-            "authors": "Jeremy Kun",
-            "when": 2016,
-            "venue": "The University of Illinois at Chicago",
-            "short-venue": "PhD Thesis",
-            "link": "http://www.levreyzin.com/papers/Kun16_phd.pdf",
-            "abstract": "Over the past few decades the internet and social networks became central to our society. As a consequence, the study of networks and the algorithmic complexity of problems about networks are an increasingly important part of the application of mathematics to practical problems. The content of this dissertation explores a variety of topics on this theme. First, we explore the tractibility of computing certain kinds of equilibria for anticoordination games played on graphs. Next, we study a generic notion of “resilience” for combinatorial search problems, specifically studying the complexity of resilient graph coloring. Then we turn to the study of MapReduce, a popular distributed computing framework whose crucial open questions are about its capacity to solve certain graph problems. Finally, we study a model of disaster recovery in networks, and prove results about the inability for algorithms to compute approximate solutions.",
-            "importance": 1,
-            "bibtex": ""
-         },
-         {
-            "title": "On the Computational Complexity of MapReduce",
-            "authors": "Benjamin Fish, Jeremy Kun, Adam Lelkes, Lev Reyzin, Gyorgy Turan",
-            "when": 2015,
-            "venue": "International Symposium on Distributed Computing",
-            "short-venue": "DISC15",
-            "link": "http://arxiv.org/abs/1410.0245",
-            "abstract": "In this paper we study the MapReduce Class (MRC) defined by Karloﬀ et al., which is a formal complexity-theoretic model of MapReduce. We show that constant-round MRC computations can decide regular languages and simulate sublogarithmic space-bounded Turing machines. In addition, we prove hierarchy theorems for MRC under certain complexity-theoretic assumptions. These theorems show that sufficiently increasing the number of rounds or the amount of time per processor strictly increases the computational power of MRC. Our work lays the foundation for further analysis relating MapReduce to established complexity classes. Our results also hold for Valiant's BSP model of parallel computation and the MPC model of Beame et al.",
-            "importance": 1,
-            "bibtex": ""
-         },
-         {
-            "title": "Network Installation Under Convex Costs",
-            "authors": "Alexander Gutfraind, Jeremy Kun, Adam Lelkes, Lev Reyzin",
-            "when": 2015,
-            "venue": "Journal of Complex Networks",
-            "short-venue": "JCN15",
-            "link": "http://comnet.oxfordjournals.org/cgi/content/abstract/cnv020?ijkey=ZiDO26VV0vKrRIO&keytype=ref",
-            "abstract": "We study the Neighbour-Aided Network Installation Problem (NANIP) introduced previously which asks for a minimal cost ordering of the nodes of a graph, where the cost of visiting a node is a function of the number of its neighbours that have already been visited. This problem has applications in resource management and disaster recovery. In this paper, we analyse the computational hardness of NANIP. In particular we show that this problem is NP-hard even when restricted to convex decreasing cost functions, give a linear approximation lower bound for the greedy algorithm, and prove a general sub-constant approximation lower bound. Then we give a new integer programming formulation of NANIP and empirically observe its speedup over the original integer programme.",
-            "importance": 1,
-            "bibtex": "@article{GutfraindKLR15,\n author = {Gutfraind, Alexander and Kun, Jeremy and Lelkes, {\\'{A}}d{\\'{a}}m D{\\'{a}}niel and Reyzin, Lev}, \n title = {Network installation under convex costs}, \n year = {2015}, \n doi = {10.1093/comnet/cnv020}, \n journal = {Journal of Complex Networks}}"
-         },
-         {
-            "title": "Fair Boosting: a Case Study",
-            "authors": "Benjamin Fish, Jeremy Kun, Adam Lelkes",
-            "when": 2015,
-            "venue": "International Conference on Machine Learning Workshop on Fairness, Accountability, and Transparency in Machine Learning",
-            "short-venue": "ICML-WFATML15",
-            "link": "http://www.fatml.org/papers/Fish_Kun_Lelkes.pdf",
-            "abstract": "We study the classical AdaBoost algorithm in the context of fairness. We use the Census Income Dataset (Lichman, 2013) as a case study. We empirically evaluate the bias and error of four variants of AdaBoost relative to an unmodified AdaBoost baseline, and study the trade-offs between reducing bias and maintaining low error. We further define a new notion of fairness and measure it for all of our methods. Our proposed method, modifying the hypothesis output by AdaBoost by shifting the decision boundary for the protected group, outperforms the state of the art for the census dataset.",
-            "importance": 1
-         },
-         {
-            "title": "Open Problem: Learning Quantum Circuits with Queries",
-            "authors": "Jeremy Kun, Lev Reyzin",
-            "when": 2015,
-            "venue": "Conference on Learning Theory",
-            "short-venue": "COLT15",
-            "link": "http://jmlr.org/proceedings/papers/v40/Kun15.html",
-            "abstract": "We pose an open problem on the complexity of learning the behavior of a quantum circuit with value injection queries. We define the learning model for  quantum circuits and give preliminary results.  Using the test-path lemma of Angluin et al. (2009a), we show that new ideas are likely needed to tackle value injection queries for the quantum setting.",
-            "importance": 1,
-            "bibtex": "@inproceedings{DBLP:conf/colt/KunR15, \n author= {Jeremy Kun and Lev Reyzin}, \n title = {Open Problem: Learning Quantum Circuits with Queries}, \n booktitle = {Proceedings of The 28th Conference on Learning Theory, {COLT} 2015, Paris, France, July 3-6, 2015}, \n pages= {1767--1769},\n year = {2015}, \n url = {http://jmlr.org/proceedings/papers/v40/Kun15.html}}"
-         },
-         {
-            "title": "A Boosting Approach to Learning Graph Representations",
-            "authors": "Rajmonda Caceres, Kevin Carter, Jeremy Kun",
-            "venue": "SIAM International Conference on Data Mining Workshop on Mining Networks and Graphs", 
-            "short-venue": "ICDM-WMNG14", 
-            "when": "2014",
-            "link": "http://arxiv.org/abs/1401.3258",
-            "abstract": "Learning the right graph representation from noisy, multisource data has garnered significant interest in recent years. A central tenet of this problem is relational learning. Here the objective is to incorporate the partial information each data source gives us in a way that captures the true underlying relationships. To address this challenge, we present a general, boosting-inspired framework for combining weak evidence of entity associations into a robust similarity metric. We explore the extent to which different quality measurements yield graph representations that are suitable for community detection. We then present empirical results on both synthetic and real datasets demonstrating the utility of this framework. Our framework leads to suitable global graph representations from quality measurements local to each edge. Finally, we discuss future extensions and theoretical considerations of learning useful graph representations from weak feedback in general application settings.",
-            "importance": 1,
-            "bibtex": "@inproceedings{CCK14, \n title = {A Boosting Approach to Learning Graph Representations}, \nauthor = {R. Caceres and K. Carter and J. Kun}, \n year = {2014}, \n booktitle = {Proc. SIAM Int. Conf. Data Mining, Workshop on Mining Networks and Graphs}, \n note = {To appear}}"
-         },
-         {
-            "title": "Anti-Coordination Games and Stable Graph Colorings",
-            "authors": "Jeremy Kun, Brian Powers, Lev Reyzin",
-            "venue": "Syposium on Algorithmic Game Theory", 
-            "short-venue": "SAGT13",
-            "when": "2013",
-            "link": "http://arxiv.org/abs/1308.3258",
-            "abstract": "Motivated by understanding non-strict and strict pure strategy equilibria in network anti-coordination games, we define notions of stable and, respectively, strictly stable colorings in graphs. We characterize the cases when such colorings exist and when the decision problem is NP-hard. These correspond to finding pure strategy equilibria in the anti-coordination games, whose price of anarchy we also analyze. We further consider the directed case, a generalization that captures both coordination and anti-coordination. We prove the decision problem for non-strict equilibria in directed graphs is NP-hard. Our notions also have multiple connections to other combinatorial questions, and our results resolve some open problems in these areas, most notably the complexity of the strictly unfriendly partition problem.",
-            "importance": 1,
-            "bibtex": "@inproceedings{KPR13, \n author = {Jeremy Kun and Brian Powers and Lev Reyzin}, \n title = {Anti-coordination Games and Stable Graph Colorings}, \n booktitle = {SAGT}, \n year = {2013}, \n pages = {122-133}, \n ee = {http://dx.doi.org/10.1007/978-3-642-41392-6_11}\n}"
-         },
-         {
-            "title": "A Confidence-Based Approach for Balancing Fairness and Accuracy",
-            "authors": "Benjamin Fish, Jeremy Kun, Adam Lelkes",
-            "venue": "SIAM International Symposium on Data Mining", 
-            "short-venue": "SDM16",
-            "when": "2016",
-            "link": "",
-            "abstract": "We study three classical machine learning algorithms in the context of algorithmic fairness: adaptive boosting, support vector machines, and logistic regression. Our goal is to maintain the high accuracy of these learning algorithms while reducing the degree to which they discriminate against individuals because of their membership in a protected group. Our first contribution is a method for achieving fairness by shifting the decision boundary for the protected group. The method is based on the theory of margins for boosting. We empirically compare our method with other variants of these learning algorithms as well as results in previous papers in the fairness literature. Our method, in addition to outperforming many of the prior algorithms in terms of accuracy and low discrimination, also allows for a fast and transparent quantification of the trade-off between bias and error. Our second contribution addresses the shortcomings of the bias-error trade-off studied in most of the algorithmic fairness literature. We demonstrate that even hopelessly naive modifications of a biased algorithm, which cannot be reasonably said to be 'fair,' can still achieve low bias and high accuracy. To help to distinguish between these naive algorithms and more sensible algorithms we propose a new measure of fairness, called resilience to random bias (RRB). We demonstrate that RRB distinguishes well between our naive and sensible fairness algorithms. RRB together with bias and accuracy provides a more complete picture of the fairness of an algorithm.",
-            "importance": 1,
-            "bibtex": "None yet."
-         },
-         {
-            "title": "Interception in Distance-Vector Routing Networks",
-            "authors": "David Burstein, Franklin Kenter, Jeremy Kun, Feng Shi",
-            "link": "http://arxiv.org/abs/1507.05206",
-            "when": "2016",
-            "venue": "Journal of Complex Networks",
-            "short-venue": "JCN",
-            "abstract": "Despite the large effort devoted to cybersecurity research over the last decades, cyber intrusions and attacks are still increasing. With respect to routing networks, route hijacking has highlighted the need to reexamine the existing protocols that govern traffic routing. In particular, our pri- mary question is how the topology of a network affects the susceptibility of a routing protocol to endogenous route misdirection. In this paper we define and analyze an abstract model of traffic interception (i.e. eavesdropping) in distance-vector routing networks. Specifically, we study al- gorithms that measure the potential of groups of dishonest agents to divert traffic through their infrastructure under the constraint that messages must reach their intended destinations. We relate two variants of our model based on the allowed kinds of lies, define strategies for colluding agents, and prove optimality in special cases. In our main theorem we derive a provably optimal monitoring strategy for subsets of agents in which no two are adjacent, and we extend this strategy to the general case. Finally, we use our results to analyze the susceptibility of real and synthetic networks to endogenous traffic interception. In the Autonomous Systems (AS) graph of the United States, we show that compromising only 18 random nodes in the AS graph surprisingly captures 10% of all traffic paths in the network in expectation when a distance-vector routing protocol is in use.",
-            "importance": 1
-         },
-         {
-            "title": "On Coloring Resilient Graphs",
-            "authors": "Jeremy Kun, Lev Reyzin",
-            "when": 2014,
-            "venue": "Mathematical Foundations of Computer Science",
-            "short-venue": "MFCS14",
-            "link": "http://arxiv.org/abs/1402.4376",
-            "abstract": "We introduce a new notion of resilience for constraint satisfaction problems, with the goal of more precisely determining the boundary between NP-hardness and the existence of efficient algorithms for resilient instances. In particular, we study $r$-resiliently $k$-colorable graphs, which are those $k$-colorable graphs that remain $k$-colorable even after the addition of any $r$ new edges. We prove lower bounds on the NP-hardness of coloring resiliently colorable graphs, and provide an algorithm that colors sufficiently resilient graphs. We also analyze the corresponding notion of resilience for $k$-SAT. This notion of resilience suggests an array of open questions for graph coloring and other combinatorial problems.",
-            "importance": 1,
-            "bibtex": "@inproceedings{KunR14, author = {Jeremy Kun and Lev Reyzin}, title = {On Coloring Resilient Graphs}, booktitle = {Mathematical Foundations of Computer Science 2014 - 39th International Symposium, {MFCS} 2014, Budapest, Hungary, August 25-29, 2014. Proceedings, Part {II}}, year = {2014}, pages = {517--528}, doi = {10.1007/978-3-662-44465-8_44},}"
-         }
-      ],
-   "Preprints":
-      [ 
-         {
-            "title": "Locally Boosted Graph Aggregation for Community Detection",
-            "authors": "Rajmonda Caceres, Kevin Carter, Jeremy Kun",
-            "link": "http://arxiv.org/abs/1405.3210",
-            "comments": "In review.",
-            "importance": 2
-         }
-      ],
-   "Posters":
-      [
-         {
-            "title": "Information Monitoring in Routing Networks",
-            "comments": "SIAM Workshop on Network Science",
-            "when": "2015",
-            "importance": 1
-         }
-      ],
-   "Talks":
-      [
-         {
-            "title": "Resilience and new approaches to approximate graph coloring",
-            "venue": "Theory Seminar, North Carolina State University",
-            "when": "2015",
-            "importance": 1,
-            "label": "Research talk"
-         },
-         {
-            "title": "A Gentle Introduction to Learning Theory",
-            "venue": "Graduate Student Colloquium, University of Illinois at Chicago",
-            "when": "2015",
-            "importance": 2,
-            "label": "Graduate student talk"
-         },
-         {
-            "title": "Eigenfaces: using linear algebra to recognize faces",
-            "venue": "Undergraduate Math Club, Wheaton College",
-            "when": "2015",
-            "importance": 3,
-            "label": "Undergraduate student talk"
-         },
-         {
-            "title": "What Can Algorithms Tell Us About Life, Love, and Happiness?",
-            "venue": "Moraine Valley Community College STEM Talks",
-            "when": "2015",
-            "importance": 1,
-            "link": "https://www.youtube.com/watch?v=JH4DOjYX59Y",
-            "label": "General audience talk"
-         },
-         {
-            "title": "On Resiliently Colorable Graphs",
-            "venue": "Computer Science Seminar, University of Illinois at Chicago",
-            "when": "2014",
-            "importance": 1,
-            "label": "Research talk"
-         },
-         {
-            "title": "Resilient Coloring and Other Combinatorial Problems",
-            "venue": "Midwest Theory Day. Purdue University",
-            "when": "2014",
-            "importance": 1,
-            "label": "Research talk"
-         },
-         {
-            "title": "Anti-Coordination Games and Stable Graph Colorings",
-            "venue": "Computer Science Seminar, University of Illinois at Chicago",
-            "when": "2013",
-            "importance": 1,
-            "label": "Research talk"
-         },
-         {
-            "title": "Information Monitoring in Routing Networks",
-            "venue": "Chicago Area SIAM Student Conference, Illinois Institute of Technology",
-            "when": "2015",
-            "importance": 2,
-            "label": "Graduate student talk"
-         },
-         {
-            "title": "How to Combine Graphs",
-            "venue": "Chicago Area SIAM Student Conference, Northwestern University",
-            "when": "2014",
-            "importance": 2,
-            "label": "Graduate student talk"
-         },
-         {
-            "title": "Stable Graph Colorings, and Why You Should Care about NP",
-            "venue": "Graduate Student Colloquium, University of Illinois at Chicago",
-            "when": "2013",
-            "importance": 2,
-            "label": "Graduate student talk"
-         },
-         {
-            "title": "A Brief Overview of Persistent Homology and its Applications",
-            "venue": "Chicago Area SIAM Student Conference, University of Illinois at Chicago",
-            "when": "2013",
-            "importance": 2,
-            "label": "Graduate student talk"
-         },
-         {
-            "title": "Hybrid Images and Fourier Analysis",
-            "venue": "Undergraduate Math Club, University of Illinois at Chicago",
-            "when": "2014",
-            "importance": 3,
-            "label": "Undergraduate student talk"
-         },
-         {
-            "title": "Classic Nintendo Games are NP-Hard",
-            "venue": "Undergraduate Math Club, University of Illinois at Chicago",
-            "when": "2013",
-            "importance": 3,
-            "label": "Undergraduate student talk"
-         },
-         {
-            "title": "PageRank and the Billion-Dollar Eigenvector",
-            "venue": "Undergraduate Math Club, University of Illinois at Chicago",
-            "when": "2012",
-            "importance": 3,
-            "label": "Undergraduate student talk"
-         },
-         {
-            "title": "Eigenfaces: Linear Algebra for Facial Recognition",
-            "venue": "Undergraduate Math Club, University of Illinois at Chicago",
-            "when": "2011",
-            "importance": 3,
-            "label": "Undergraduate student talk"
-         },
-         {
-            "title": "How to Send Secret Messages (RSA)",
-            "venue": "'Math and Snacks,' University of Illinois at Chicago",
-            "when": "2015",
-            "importance": 3,
-            "label": "Undergraduate student talk"
-         },
-         {
-            "title": "Elliptic Curves, Projective Geometry, and Python",
-            "venue": "Stanford Pre-Collegiate Studies",
-            "when": "2014",
-            "importance": 3,
-            "label": "High school talk"
-         },
-         {
-            "title": "Guest lectures to high school students",
-            "venue": "Various locations",
-            "when": "2011 - Present",
-            "importance": 3,
-            "label": "High school talk"
-         }
-      ],
-   "Professional Programs":
-      [
-         {
-            "title": "Ph.D Student Intern",
-            "organization": "MIT Lincoln Labs",
-            "type": "Research internship",
-            "when": "Summer 2013",
-            "comments": "Research on machine learning in large graphs.",
-            "importance": 1
-         }, 
-         {
-            "title": "Ph.D Student Intern",
-            "organization": "Lawrence Livermore National Laboratory",
-            "type": "Research internship",
-            "when": "Summer 2012",
-            "comments": "Data mining research in wind energy and plasma physics.",
-            "importance": 1
-         }, 
-         {
-            "title": "Network Science Week",
-            "organization": "American Mathematical Society Mathematics Research Community",
-            "type": "Summer school",
-            "when": "June 2014",
-            "comments": "Received mentoring, engaged in research to attack open problems, and developed new collaborations.",
-            "importance": 1
-         }, 
-         {
-            "title": "Software Developer Intern",
-            "organization": "Amazon.com",
-            "type": "Software internship",
-            "when": "Summer 2009",
-            "comments": "Worked on the message-passing framework in a million-line service-oriented C++ architecture which regulated inventory in all of Amazon's warehouses.",
-            "importance": 2
-         } 
-      ],
-   "Work Experience":
-      [ 
-         {
-            "title": "Software Engineer",
-            "organization": "Google, Inc.",
-            "type": "Full time",
-            "when": "2017 - Present",
-            "comments": "Engineer focusing on resource planning and optimization. Worked on large integer linear programs for optimizing resource allocation in Google's datacenter fleet. Applied machine learning to anomaly detection problems therein.",
-            "importance": 1
-         }, 
-         {
-            "title": "Backend Engineer",
-            "organization": "21, Inc.",
-            "type": "Full time",
-            "when": "2016 - 2017",
-            "comments": "Acquired as Earn.com by Coinbase in 2018-04. Built the Django backend for a task marketplace, including surveys, branching task pipelines, and automated reviews. Additional roles building an elasticsearch integration, doing ad hoc data science, maintaining an open-source bitcoin wallet (two1-python), and a mobile developer.",
-            "importance": 1
-         }, 
-         {
-            "title": "Graduate Research Assistant",
-            "organization": "MIT Lincoln Laboratory",
-            "type": "Part time research assistantship",
-            "when": "2013 - 2014",
-            "comments": "Research on graph representation learning, data mining on large networks. Proved theorems, designed algorithms, ran experiments, and wrote technical research papers.",
-            "importance": 1
-         }, 
-         {
-            "title": "Graduate Teaching Assistant",
-            "organization": "University of Illinois at Chicago",
-            "type": "Part time teaching assistantship",
-            "when": "2011 - 2013",
-            "comments": "Taught calculus and introductory computer science.",
-            "importance": 1
-         }, 
-         {
-            "title": "Junior Developer",
-            "organization": "CreateSpace On-Demand Publishing",
-            "type": "Software internship",
-            "when": "2008 - 2009",
-            "comments": "Designed and developed a new accounting gateway infrastructure for a growing tech start-up, including writing thousands of lines of Java and SQL. Completed a technical writing training program.",
-            "importance": 2
-         }, 
-         {
-            "title": "Camp Counselor",
-            "organization": "Adventure Day Camp",
-            "type": "Summer job",
-            "when": "Summer 2005 - 2007, Summer 2010",
-            "comments": "Child care ages 4-11.",
-            "importance": 4
-         }
-      ],
-   "Service":
-      [
-         {
-            "title": "Reviewer",
-            "event": "ALT 2015",
-            "organization": "Algorithmic Learning Theory",
-            "when": "2015",
-            "importance": 1
-         },
-         {
-            "title": "Organizer",
-            "event": "Graduate Student Theoretical Computer Science Seminar",
-            "organization": "University of Illinois at Chicago",
-            "when": "2013 - Present",
-            "importance": 2
-         },
-         {
-            "title": "Organizer",
-            "event": "Graduate Student Colloquium",
-            "organization": "University of Illinois at Chicago",
-            "when": "2015",
-            "importance": 2
-         },
-         {
-            "title": "Publicity Co-Chair",
-            "event": "ISAIM 2014",
-            "organization": "International Symposium on Artificial Intelligence and Mathematics",
-            "when": "2014",
-            "importance": 1
-         },
-         {
-            "title": "Instructor",
-            "event": "Website Workshop",
-            "organization": "Association for Women in Mathematics, University of Illinois at Chicago",
-            "when": "2013",
-            "importance": 2
-         }
-      ],
-   "Teaching":
-      [
-         {
-            "course": "Calculus 1",
-            "institution": "University of Illinois at Chicago",
-            "when": "Fall 2011, Fall 2013, Fall 2015",
-            "type": "TA",
-            "comments": "Led a discussion session twice weekly.",
-            "importance": 1
-         },
-         {
-            "course": "Differential Equations",
-            "institution": "University of Illinois at Chicago",
-            "when": "Spring 2016",
-            "type": "TA",
-            "comments": "Led a discussion session once weekly.",
-            "importance": 1 
-         },
-         {
-            "course": "Introduction to Mathematical Computer Science",
-            "institution": "University of Illinois at Chicago",
-            "when": "Spring 2012, Fall 2012, Spring 2013",
-            "type": "TA",
-            "comments": "Wrote a grading robot for all labs and projects.",
-            "importance": 1 
-         }
-      ],
-   "Awards":
-      [
-         {
-            "title": "Dean's Scholar Award",
-            "granter": "University of Illinois at Chicago",
-            "comments": "To provide the most distinguished, advanced-level graduate students with a period of time dedicated solely to the completion of their programs",
-            "when": "2014",
-            "monetary-value": "$25,000",
-            "importance": 1
-         },
-         {
-            "title": "Best Student Poster Award",
-            "granter": "SIAM Network Science 15",
-            "comments": "For the poster 'Information Monitoring in Routing Networks'",
-            "when": "2015",
-            "monetary-value": "$100",
-            "importance": 2
-         },
-         {
-            "title": "Charles J. Hanks Excellence in Mathematics Award",
-            "granter": "California Polytechnic State University",
-            "comments": "Demonstrated excellence and outstanding ability",
-            "when": "2011",
-            "importance": 2
-         },
-         {
-            "title": "Robert P. Balles Mathematics Award",
-            "granter": "California Polytechnic State University",
-            "comments": "Highest GPA in mathematics coursework after three years",
-            "when": "2010",
-            "importance": 2
-         },
-         {
-            "title": "3rd Place in a Collegiate Regional Programming Contest",
-            "granter": "Association for Computing Machinery",
-            "comments": "Three-person team programming tasks",
-            "when": "2009",
-            "importance": 4
-         },
-         {
-            "title": "Eagle Scout Award",
-            "granter": "Boy Scouts of America",
-            "comments": "Troop 234 of Moraga, CA",
-            "when": "2007",
-            "importance": 2
-         },
-         {
-            "title": "Black Belt, First Degree",
-            "granter": "World Tae Kwon Do Federation",
-            "comments": "Kang's Tae Kwon Do Academy. Walnut Creek, CA",
-            "when": "2007",
-            "importance": 4
-         }
-      ],
-   "Programming":
-      [
-         {
-            "name": "Portfolio",
-            "title": "Github Repository",
-            "link": "https://github.com/j2kun/",
-            "importance": 1
-         },
-         {
-            "name": "Top Language",
-            "title": "Python",
-            "importance": 2
-         },
-         {
-            "name": "Competent Languages",
-            "title": "Python, Java, C, C++, Haskell, Racket, HTML/CSS, Mathematica, Javascript/Node/ES6",
-            "importance": 2
-         },
-         {
-            "name": "Familiar Languages",
-            "title": "R, Perl, Bash, PHP, SQL",
-            "importance": 2
-         }
-      ],
-   "Contract Work":
-      [
-         {
-            "title": "QED Math Symposium",
-            "link": "http://qed.wpcp.org/",
-            "organization": "Chicago Public Schools",
-            "type": "Webmaster",
-            "when": "2012 - Present",
-            "importance": 2
-         }, 
-         {
-            "title": "Doing Math with Python",
-            "organization": "No Starch Press",
-            "type": "Technical Reviewer",
-            "comments": "Publication date: 2015-05-25",
-            "when": "2014 - 2015",
-            "importance": 2
-         },
-         {
-            "title": "Impractical Python",
-            "organization": "No Starch Press",
-            "type": "Technical Reviewer",
-            "comments": "Publication date: 2018-08-07",
-            "when": "2018",
-            "importance": 2
-         },
-      ],
-   "Other":
-      [
-         {
-            "name": "Blog",
-            "title": "Math Intersect Programming",
-            "link": "http://jeremykun.com",
-            "comments": "In-depth presentation of technical topics with full implementations in code. As of February 2017: 236 published posts, 2000 word average post length, over 3.5 million page views since June 2011.",
-            "importance": 1
-         }
+  "header": {
+    "Webpage": "https://jeremykun.com",
+    "Research summary": "I am a theoretical computer scientist with broad interests, including complexity theory, network science, and learning theory. I currently work at Google on supply chain optimization",
+    "Name": "Jeremy Kun",
+    "Email": "jkun /at/ google.com"
+  },
+  "sections": [
+    {
+      "section_name": "Education",
+      "section_entries": [
+        {
+          "importance": 1,
+          "when": "2011 - 2016",
+          "institution": "University of Illinois at Chicago",
+          "degree": "Ph.D",
+          "subject": "Mathematics"
+        },
+        {
+          "importance": 2,
+          "when": "2010",
+          "institution": "Budapest Semesters in Mathematics",
+          "comments": "Graduated with honors."
+        },
+        {
+          "degree": "B.S.",
+          "importance": 1,
+          "when": "2007 - 2011",
+          "comments": "Magna Cum Laude",
+          "institution": "California Polytechnic State University",
+          "subject": "Mathematics, Minor in Computer Science"
+        }
       ]
+    },
+    {
+      "section_name": "Publications",
+      "section_entries": [
+        {
+          "title": "A Programmer's Introduction to Mathematics",
+          "importance": 0,
+          "when": "2018",
+          "link": "https://pimbook.org",
+          "authors": "Jeremy Kun",
+          "bibtex": "@book{pimbook, author = {Jeremy Kun}, title = {A Programmer's Introduction to Mathematics}, publisher = {CreateSpace Independent Publishing Platform}, year = 2018, isbn = {1727125452} }"
+        },
+        {
+          "title": "Treedepth Bounds in Linear Colorings",
+          "importance": 1,
+          "when": "2018",
+          "abstract": "Low-treedepth colorings are an important tool for algorithms that exploit structure in classes of bounded expansion; they guarantee subgraphs that use few colors are guaranteed to have bounded treedepth. These colorings have an implicit tradeoff between the total number of colors used and the treedepth bound, and prior empirical work suggests that the former dominates the run time of existing algorithms in practice. We introduce p-linear colorings as an alternative to the commonly used p-centered colorings. They can be efficiently computed in bounded expansion classes and use at most as many colors as p-centered colorings. Although a set of k<p colors from a p-centered coloring induces a subgraph of treedepth at most k, the same number of colors from a p-linear coloring may induce subgraphs of larger treedepth. A simple analysis of this treedepth bound shows it cannot exceed 2k, but no graph class is known to have treedepth more than 2k. We establish polynomial upper bounds via constructive coloring algorithms in trees and intervals graphs, and conjecture that a polynomial relationship is in fact the worst case in general graphs. We also give a co-NP-completeness reduction for recognizing p-linear colorings and discuss ways to overcome this limitation in practice.",
+          "short-venue": "WG18",
+          "venue": "44th International Workshop on Graph-Theoretic Concepts in Computer Science",
+          "link": "https://arxiv.org/abs/1802.09665",
+          "authors": "Jeremy Kun, Michael P. O'Brien, Blair D. Sullivan",
+          "bibtex": "@inproceedings{kun2018treedepth, title={Treedepth bounds in linear colorings}, author={Kun, Jeremy and O'Brien, Michael P and Sullivan, Blair D}, booktitle={International Workshop on Graph-Theoretic Concepts in Computer Science}, pages={331--343}, year={2018}, organization={Springer} }"
+        },
+        {
+          "title": "Graphs, New Models, and Complexity",
+          "importance": 1,
+          "when": "2016",
+          "abstract": "Over the past few decades the internet and social networks became central to our society. As a consequence, the study of networks and the algorithmic complexity of problems about networks are an increasingly important part of the application of mathematics to practical problems. The content of this dissertation explores a variety of topics on this theme. First, we explore the tractibility of computing certain kinds of equilibria for anticoordination games played on graphs. Next, we study a generic notion of “resilience” for combinatorial search problems, specifically studying the complexity of resilient graph coloring. Then we turn to the study of MapReduce, a popular distributed computing framework whose crucial open questions are about its capacity to solve certain graph problems. Finally, we study a model of disaster recovery in networks, and prove results about the inability for algorithms to compute approximate solutions.",
+          "short-venue": "PhD Thesis",
+          "venue": "The University of Illinois at Chicago",
+          "link": "http://www.levreyzin.com/papers/Kun16_phd.pdf",
+          "authors": "Jeremy Kun",
+          "bibtex": "@phdthesis{kun2016graphs, title={Graphs, New Models, and Complexity}, author={Kun, Jeremy J}, year={2016} }"
+        },
+        {
+          "title": "A Confidence-Based Approach for Balancing Fairness and Accuracy",
+          "importance": 1,
+          "venue": "SIAM International Symposium on Data Mining",
+          "abstract": "We study three classical machine learning algorithms in the context of algorithmic fairness: adaptive boosting, support vector machines, and logistic regression. Our goal is to maintain the high accuracy of these learning algorithms while reducing the degree to which they discriminate against individuals because of their membership in a protected group. Our first contribution is a method for achieving fairness by shifting the decision boundary for the protected group. The method is based on the theory of margins for boosting. We empirically compare our method with other variants of these learning algorithms as well as results in previous papers in the fairness literature. Our method, in addition to outperforming many of the prior algorithms in terms of accuracy and low discrimination, also allows for a fast and transparent quantification of the trade-off between bias and error. Our second contribution addresses the shortcomings of the bias-error trade-off studied in most of the algorithmic fairness literature. We demonstrate that even hopelessly naive modifications of a biased algorithm, which cannot be reasonably said to be 'fair,' can still achieve low bias and high accuracy. To help to distinguish between these naive algorithms and more sensible algorithms we propose a new measure of fairness, called resilience to random bias (RRB). We demonstrate that RRB distinguishes well between our naive and sensible fairness algorithms. RRB together with bias and accuracy provides a more complete picture of the fairness of an algorithm.",
+          "short-venue": "SDM16",
+          "when": "2016",
+          "link": "https://arxiv.org/abs/1601.05764",
+          "authors": "Benjamin Fish, Jeremy Kun, Adam Lelkes",
+          "bibtex": "@inproceedings{fish2016confidence, title={A confidence-based approach for balancing fairness and accuracy}, author={Fish, Benjamin and Kun, Jeremy and Lelkes, {\\'{A}}d{\\'{a}}m D}, booktitle={Proceedings of the 2016 SIAM International Conference on Data Mining}, pages={144--152}, year={2016}, organization={SIAM} }"
+        },
+        {
+          "title": "Interception in Distance-Vector Routing Networks",
+          "importance": 1,
+          "venue": "Journal of Complex Networks",
+          "abstract": "Despite the large effort devoted to cybersecurity research over the last decades, cyber intrusions and attacks are still increasing. With respect to routing networks, route hijacking has highlighted the need to reexamine the existing protocols that govern traffic routing. In particular, our pri- mary question is how the topology of a network affects the susceptibility of a routing protocol to endogenous route misdirection. In this paper we define and analyze an abstract model of traffic interception (i.e. eavesdropping) in distance-vector routing networks. Specifically, we study al- gorithms that measure the potential of groups of dishonest agents to divert traffic through their infrastructure under the constraint that messages must reach their intended destinations. We relate two variants of our model based on the allowed kinds of lies, define strategies for colluding agents, and prove optimality in special cases. In our main theorem we derive a provably optimal monitoring strategy for subsets of agents in which no two are adjacent, and we extend this strategy to the general case. Finally, we use our results to analyze the susceptibility of real and synthetic networks to endogenous traffic interception. In the Autonomous Systems (AS) graph of the United States, we show that compromising only 18 random nodes in the AS graph surprisingly captures 10% of all traffic paths in the network in expectation when a distance-vector routing protocol is in use.",
+          "short-venue": "JCN",
+          "when": "2016",
+          "link": "http://arxiv.org/abs/1507.05206",
+          "authors": "David Burstein, Franklin Kenter, Jeremy Kun, Feng Shi"
+        },
+        {
+          "title": "On the Computational Complexity of MapReduce",
+          "importance": 1,
+          "when": "2015",
+          "abstract": "In this paper we study the MapReduce Class (MRC) defined by Karloﬀ et al., which is a formal complexity-theoretic model of MapReduce. We show that constant-round MRC computations can decide regular languages and simulate sublogarithmic space-bounded Turing machines. In addition, we prove hierarchy theorems for MRC under certain complexity-theoretic assumptions. These theorems show that sufficiently increasing the number of rounds or the amount of time per processor strictly increases the computational power of MRC. Our work lays the foundation for further analysis relating MapReduce to established complexity classes. Our results also hold for Valiant's BSP model of parallel computation and the MPC model of Beame et al.",
+          "short-venue": "DISC15",
+          "venue": "International Symposium on Distributed Computing",
+          "link": "http://arxiv.org/abs/1410.0245",
+          "authors": "Benjamin Fish, Jeremy Kun, Adam Lelkes, Lev Reyzin, Gyorgy Turan",
+          "bibtex": "@inproceedings{fish2015computational, title={On the computational complexity of mapreduce}, author={Fish, Benjamin and Kun, Jeremy and Lelkes, {\\'{A}}d{\\'{a}}m D and Reyzin, Lev and Tur{\\'{a}}n, Gy{\\\"{o}}rgy}, booktitle={International symposium on distributed computing}, pages={1--15}, year={2015}, organization={Springer} }"
+        },
+        {
+          "title": "Network Installation Under Convex Costs",
+          "importance": 1,
+          "when": "2015",
+          "abstract": "We study the Neighbour-Aided Network Installation Problem (NANIP) introduced previously which asks for a minimal cost ordering of the nodes of a graph, where the cost of visiting a node is a function of the number of its neighbours that have already been visited. This problem has applications in resource management and disaster recovery. In this paper, we analyse the computational hardness of NANIP. In particular we show that this problem is NP-hard even when restricted to convex decreasing cost functions, give a linear approximation lower bound for the greedy algorithm, and prove a general sub-constant approximation lower bound. Then we give a new integer programming formulation of NANIP and empirically observe its speedup over the original integer programme.",
+          "short-venue": "JCN15",
+          "venue": "Journal of Complex Networks",
+          "link": "http://comnet.oxfordjournals.org/cgi/content/abstract/cnv020?ijkey=ZiDO26VV0vKrRIO&keytype=ref",
+          "authors": "Alexander Gutfraind, Jeremy Kun, Adam Lelkes, Lev Reyzin",
+          "bibtex": "@article{GutfraindKLR15,\n author = {Gutfraind, Alexander and Kun, Jeremy and Lelkes, {\\'{A}}d{\\'{a}}m D{\\'{a}}niel and Reyzin, Lev}, \n title = {Network installation under convex costs}, \n year = {2015}, \n doi = {10.1093/comnet/cnv020}, \n journal = {Journal of Complex Networks}}"
+        },
+        {
+          "title": "Fair Boosting: a Case Study",
+          "importance": 1,
+          "when": "2015",
+          "abstract": "We study the classical AdaBoost algorithm in the context of fairness. We use the Census Income Dataset (Lichman, 2013) as a case study. We empirically evaluate the bias and error of four variants of AdaBoost relative to an unmodified AdaBoost baseline, and study the trade-offs between reducing bias and maintaining low error. We further define a new notion of fairness and measure it for all of our methods. Our proposed method, modifying the hypothesis output by AdaBoost by shifting the decision boundary for the protected group, outperforms the state of the art for the census dataset.",
+          "short-venue": "ICML-WFATML15",
+          "venue": "International Conference on Machine Learning Workshop on Fairness, Accountability, and Transparency in Machine Learning",
+          "link": "http://www.fatml.org/papers/Fish_Kun_Lelkes.pdf",
+          "authors": "Benjamin Fish, Jeremy Kun, Adam Lelkes"
+        },
+        {
+          "title": "Open Problem: Learning Quantum Circuits with Queries",
+          "importance": 1,
+          "when": "2015",
+          "abstract": "We pose an open problem on the complexity of learning the behavior of a quantum circuit with value injection queries. We define the learning model for  quantum circuits and give preliminary results.  Using the test-path lemma of Angluin et al. (2009a), we show that new ideas are likely needed to tackle value injection queries for the quantum setting.",
+          "short-venue": "COLT15",
+          "venue": "Conference on Learning Theory",
+          "link": "http://jmlr.org/proceedings/papers/v40/Kun15.html",
+          "authors": "Jeremy Kun, Lev Reyzin",
+          "bibtex": "@inproceedings{DBLP:conf/colt/KunR15, \n author= {Jeremy Kun and Lev Reyzin}, \n title = {Open Problem: Learning Quantum Circuits with Queries}, \n booktitle = {Proceedings of The 28th Conference on Learning Theory, {COLT} 2015, Paris, France, July 3-6, 2015}, \n pages= {1767--1769},\n year = {2015}, \n url = {http://jmlr.org/proceedings/papers/v40/Kun15.html}}"
+        },
+        {
+          "title": "A Boosting Approach to Learning Graph Representations",
+          "importance": 1,
+          "venue": "SIAM International Conference on Data Mining Workshop on Mining Networks and Graphs",
+          "abstract": "Learning the right graph representation from noisy, multisource data has garnered significant interest in recent years. A central tenet of this problem is relational learning. Here the objective is to incorporate the partial information each data source gives us in a way that captures the true underlying relationships. To address this challenge, we present a general, boosting-inspired framework for combining weak evidence of entity associations into a robust similarity metric. We explore the extent to which different quality measurements yield graph representations that are suitable for community detection. We then present empirical results on both synthetic and real datasets demonstrating the utility of this framework. Our framework leads to suitable global graph representations from quality measurements local to each edge. Finally, we discuss future extensions and theoretical considerations of learning useful graph representations from weak feedback in general application settings.",
+          "short-venue": "ICDM-WMNG14",
+          "when": "2014",
+          "link": "http://arxiv.org/abs/1401.3258",
+          "authors": "Rajmonda Caceres, Kevin Carter, Jeremy Kun",
+          "bibtex": "@inproceedings{CCK14, \n title = {A Boosting Approach to Learning Graph Representations}, \nauthor = {R. Caceres and K. Carter and J. Kun}, \n year = {2014}, \n booktitle = {Proc. SIAM Int. Conf. Data Mining, Workshop on Mining Networks and Graphs}, \n note = {To appear}}"
+        },
+        {
+          "title": "On Coloring Resilient Graphs",
+          "importance": 1,
+          "when": "2014",
+          "abstract": "We introduce a new notion of resilience for constraint satisfaction problems, with the goal of more precisely determining the boundary between NP-hardness and the existence of efficient algorithms for resilient instances. In particular, we study $r$-resiliently $k$-colorable graphs, which are those $k$-colorable graphs that remain $k$-colorable even after the addition of any $r$ new edges. We prove lower bounds on the NP-hardness of coloring resiliently colorable graphs, and provide an algorithm that colors sufficiently resilient graphs. We also analyze the corresponding notion of resilience for $k$-SAT. This notion of resilience suggests an array of open questions for graph coloring and other combinatorial problems.",
+          "short-venue": "MFCS14",
+          "venue": "Mathematical Foundations of Computer Science",
+          "link": "http://arxiv.org/abs/1402.4376",
+          "authors": "Jeremy Kun, Lev Reyzin",
+          "bibtex": "@inproceedings{KunR14, author = {Jeremy Kun and Lev Reyzin}, title = {On Coloring Resilient Graphs}, booktitle = {Mathematical Foundations of Computer Science 2014 - 39th International Symposium, {MFCS} 2014, Budapest, Hungary, August 25-29, 2014. Proceedings, Part {II}}, year = {2014}, pages = {517--528}, doi = {10.1007/978-3-662-44465-8_44},}"
+        },
+        {
+          "title": "Anti-Coordination Games and Stable Graph Colorings",
+          "importance": 1,
+          "venue": "Syposium on Algorithmic Game Theory",
+          "abstract": "Motivated by understanding non-strict and strict pure strategy equilibria in network anti-coordination games, we define notions of stable and, respectively, strictly stable colorings in graphs. We characterize the cases when such colorings exist and when the decision problem is NP-hard. These correspond to finding pure strategy equilibria in the anti-coordination games, whose price of anarchy we also analyze. We further consider the directed case, a generalization that captures both coordination and anti-coordination. We prove the decision problem for non-strict equilibria in directed graphs is NP-hard. Our notions also have multiple connections to other combinatorial questions, and our results resolve some open problems in these areas, most notably the complexity of the strictly unfriendly partition problem.",
+          "short-venue": "SAGT13",
+          "when": "2013",
+          "link": "http://arxiv.org/abs/1308.3258",
+          "authors": "Jeremy Kun, Brian Powers, Lev Reyzin",
+          "bibtex": "@inproceedings{KPR13, \n author = {Jeremy Kun and Brian Powers and Lev Reyzin}, \n title = {Anti-coordination Games and Stable Graph Colorings}, \n booktitle = {SAGT}, \n year = {2013}, \n pages = {122-133}, \n ee = {http://dx.doi.org/10.1007/978-3-642-41392-6_11}\n}"
+        }
+      ]
+    },
+    {
+      "section_name": "Preprints",
+      "section_entries": []
+    },
+    {
+      "section_name": "Posters",
+      "section_entries": [
+        {
+          "importance": 1,
+          "when": "2015",
+          "comments": "SIAM Workshop on Network Science",
+          "title": "Information Monitoring in Routing Networks"
+        }
+      ]
+    },
+    {
+      "section_name": "Talks",
+      "section_entries": [
+        {
+          "importance": 1,
+          "venue": "Math for America, Thursday Speaker Series",
+          "title": "Math and Programming: A More Perfect Union",
+          "when": "2020",
+          "label": "Teaching talk"
+        },
+        {
+          "importance": 1,
+          "venue": "Disney Jedi Engineering Training Academy",
+          "title": "Mathematics: The Good Parts",
+          "when": "2019",
+          "label": "Engineering talk"
+        },
+        {
+          "importance": 1,
+          "venue": "Github",
+          "title": "Mathematics: The Good Parts",
+          "when": "2019",
+          "label": "Engineering talk"
+        },
+        {
+          "importance": 1,
+          "venue": "Theory Seminar, North Carolina State University",
+          "title": "Resilience and new approaches to approximate graph coloring",
+          "when": "2015",
+          "label": "Research talk"
+        },
+        {
+          "importance": 2,
+          "venue": "Graduate Student Colloquium, University of Illinois at Chicago",
+          "title": "A Gentle Introduction to Learning Theory",
+          "when": "2015",
+          "label": "Graduate student talk"
+        },
+        {
+          "importance": 3,
+          "venue": "Undergraduate Math Club, Wheaton College",
+          "title": "Eigenfaces: using linear algebra to recognize faces",
+          "when": "2015",
+          "label": "Undergraduate student talk"
+        },
+        {
+          "title": "What Can Algorithms Tell Us About Life, Love, and Happiness?",
+          "importance": 1,
+          "venue": "Moraine Valley Community College STEM Talks",
+          "when": "2015",
+          "label": "General audience talk",
+          "link": "https://www.youtube.com/watch?v=JH4DOjYX59Y"
+        },
+        {
+          "importance": 2,
+          "venue": "Chicago Area SIAM Student Conference, Illinois Institute of Technology",
+          "title": "Information Monitoring in Routing Networks",
+          "when": "2015",
+          "label": "Graduate student talk"
+        },
+        {
+          "importance": 3,
+          "venue": "'Math and Snacks,' University of Illinois at Chicago",
+          "title": "How to Send Secret Messages (RSA)",
+          "when": "2015",
+          "label": "Undergraduate student talk"
+        },
+        {
+          "importance": 1,
+          "venue": "Computer Science Seminar, University of Illinois at Chicago",
+          "title": "On Resiliently Colorable Graphs",
+          "when": "2014",
+          "label": "Research talk"
+        },
+        {
+          "importance": 1,
+          "venue": "Midwest Theory Day. Purdue University",
+          "title": "Resilient Coloring and Other Combinatorial Problems",
+          "when": "2014",
+          "label": "Research talk"
+        },
+        {
+          "importance": 2,
+          "venue": "Chicago Area SIAM Student Conference, Northwestern University",
+          "title": "How to Combine Graphs",
+          "when": "2014",
+          "label": "Graduate student talk"
+        },
+        {
+          "importance": 3,
+          "venue": "Undergraduate Math Club, University of Illinois at Chicago",
+          "title": "Hybrid Images and Fourier Analysis",
+          "when": "2014",
+          "label": "Undergraduate student talk"
+        },
+        {
+          "importance": 3,
+          "venue": "Stanford Pre-Collegiate Studies",
+          "title": "Elliptic Curves, Projective Geometry, and Python",
+          "when": "2014",
+          "label": "High school talk"
+        },
+        {
+          "importance": 1,
+          "venue": "Computer Science Seminar, University of Illinois at Chicago",
+          "title": "Anti-Coordination Games and Stable Graph Colorings",
+          "when": "2013",
+          "label": "Research talk"
+        },
+        {
+          "importance": 2,
+          "venue": "Graduate Student Colloquium, University of Illinois at Chicago",
+          "title": "Stable Graph Colorings, and Why You Should Care about NP",
+          "when": "2013",
+          "label": "Graduate student talk"
+        },
+        {
+          "importance": 2,
+          "venue": "Chicago Area SIAM Student Conference, University of Illinois at Chicago",
+          "title": "A Brief Overview of Persistent Homology and its Applications",
+          "when": "2013",
+          "label": "Graduate student talk"
+        },
+        {
+          "importance": 3,
+          "venue": "Undergraduate Math Club, University of Illinois at Chicago",
+          "title": "Classic Nintendo Games are NP-Hard",
+          "when": "2013",
+          "label": "Undergraduate student talk"
+        },
+        {
+          "importance": 3,
+          "venue": "Undergraduate Math Club, University of Illinois at Chicago",
+          "title": "PageRank and the Billion-Dollar Eigenvector",
+          "when": "2012",
+          "label": "Undergraduate student talk"
+        },
+        {
+          "importance": 3,
+          "venue": "Various locations",
+          "title": "Guest lectures to high school students",
+          "when": "2011 - 2015",
+          "label": "High school talk"
+        },
+        {
+          "importance": 3,
+          "venue": "Undergraduate Math Club, University of Illinois at Chicago",
+          "title": "Eigenfaces: Linear Algebra for Facial Recognition",
+          "when": "2011",
+          "label": "Undergraduate student talk"
+        }
+      ]
+    },
+    {
+      "section_name": "Professional Programs",
+      "section_entries": [
+        {
+          "title": "Network Science Week",
+          "importance": 3,
+          "when": "2014",
+          "comments": "Received mentoring, engaged in research to attack open problems, and developed new collaborations",
+          "organization": "American Mathematical Society Mathematics Research Community",
+          "type": "Summer school"
+        }
+      ]
+    },
+    {
+      "section_name": "Work Experience",
+      "section_entries": [
+        {
+          "title": "Software Engineer",
+          "importance": 1,
+          "when": "2017 - Present",
+          "comments": "Engineer focusing on resource planning and optimization. Worked on large integer linear programs for optimizing resource allocation in Google's datacenter fleet. Applied machine learning to problems therein",
+          "organization": "Google, Inc",
+          "type": "Full time"
+        },
+        {
+          "title": "Bitcoin Protocol Engineer",
+          "importance": 1,
+          "when": "2016 - 2017",
+          "comments": "Acquired as Earn.com by Coinbase in 2018-04. Built the Django backend for a task marketplace, including surveys, branching task pipelines, and automated reviews. Additional roles building an elasticsearch integration, doing ad hoc data science, maintaining an open-source bitcoin wallet (two1-python), and a mobile developer",
+          "organization": "21, Inc",
+          "type": "Full time"
+        },
+        {
+          "title": "Graduate Research Assistant",
+          "importance": 2,
+          "when": "2013 - 2014",
+          "comments": "Research on graph representation learning, data mining on large networks. Proved theorems, designed algorithms, ran experiments, and wrote technical research papers",
+          "organization": "MIT Lincoln Laboratory",
+          "type": "Part time research assistantship"
+        },
+        {
+          "title": "Ph.D Student Intern",
+          "importance": 2,
+          "when": "2012",
+          "comments": "Data mining research in wind energy and plasma physics",
+          "organization": "Lawrence Livermore National Laboratory",
+          "type": "Research internship"
+        },
+        {
+          "title": "Graduate Teaching Assistant",
+          "importance": 2,
+          "when": "2011 - 2013",
+          "comments": "Taught calculus and introductory computer science",
+          "organization": "University of Illinois at Chicago",
+          "type": "Part time teaching assistantship"
+        },
+        {
+          "title": "Software Developer Intern",
+          "importance": 2,
+          "when": "2009",
+          "comments": "Worked on the message-passing framework in a million-line service-oriented C++ architecture which regulated inventory in all of Amazon's warehouses",
+          "organization": "Amazon.com",
+          "type": "Software internship"
+        },
+        {
+          "title": "Junior Developer",
+          "importance": 2,
+          "when": "2008 - 2009",
+          "comments": "Designed and developed a new accounting gateway infrastructure for a growing tech start-up, including writing thousands of lines of Java and SQL. Completed a technical writing training program",
+          "organization": "CreateSpace On-Demand Publishing",
+          "type": "Software internship"
+        },
+        {
+          "title": "Camp Counselor",
+          "importance": 4,
+          "when": "2005 - 2007, 2010",
+          "comments": "Child care ages 4-11",
+          "organization": "Adventure Day Camp",
+          "type": "Summer job"
+        }
+      ]
+    },
+    {
+      "section_name": "Service",
+      "section_entries": [
+        {
+          "importance": 2,
+          "organization": "Algorithmic Learning Theory",
+          "when": "2015",
+          "event": "ALT 2015",
+          "title": "Reviewer"
+        },
+        {
+          "importance": 2,
+          "organization": "University of Illinois at Chicago",
+          "when": "2015",
+          "event": "Graduate Student Colloquium",
+          "title": "Organizer"
+        },
+        {
+          "importance": 2,
+          "organization": "International Symposium on Artificial Intelligence and Mathematics",
+          "when": "2014",
+          "event": "ISAIM 2014",
+          "title": "Publicity Co-Chair"
+        },
+        {
+          "importance": 2,
+          "organization": "University of Illinois at Chicago",
+          "when": "2013 - Present",
+          "event": "Graduate Student Theoretical Computer Science Seminar",
+          "title": "Organizer"
+        },
+        {
+          "importance": 2,
+          "organization": "Association for Women in Mathematics, University of Illinois at Chicago",
+          "when": "2013",
+          "event": "Website Workshop",
+          "title": "Instructor"
+        }
+      ]
+    },
+    {
+      "section_name": "Teaching",
+      "section_entries": [
+        {
+          "importance": 2,
+          "when": "2016",
+          "comments": "Led a discussion session once weekly",
+          "course": "Differential Equations",
+          "type": "TA",
+          "institution": "University of Illinois at Chicago"
+        },
+        {
+          "importance": 2,
+          "when": "2012 - 2013",
+          "comments": "Wrote a grading robot for all labs and projects",
+          "course": "Introduction to Mathematical Computer Science",
+          "type": "TA",
+          "institution": "University of Illinois at Chicago"
+        },
+        {
+          "importance": 2,
+          "when": "2011, 2013, 2015",
+          "comments": "Led a discussion session twice weekly",
+          "course": "Calculus 1",
+          "type": "TA",
+          "institution": "University of Illinois at Chicago"
+        }
+      ]
+    },
+    {
+      "section_name": "Awards",
+      "section_entries": [
+        {
+          "title": "Best Student Poster Award",
+          "importance": 2,
+          "when": "2015",
+          "comments": "For the poster 'Information Monitoring in Routing Networks'",
+          "monetary-value": "$100",
+          "granter": "SIAM Network Science 15"
+        },
+        {
+          "title": "Dean's Scholar Award",
+          "importance": 1,
+          "when": "2014",
+          "comments": "To provide the most distinguished, advanced-level graduate students with a period of time dedicated solely to the completion of their programs",
+          "monetary-value": "$25,000",
+          "granter": "University of Illinois at Chicago"
+        },
+        {
+          "importance": 2,
+          "granter": "California Polytechnic State University",
+          "when": "2011",
+          "comments": "Demonstrated excellence and outstanding ability",
+          "title": "Charles J. Hanks Excellence in Mathematics Award"
+        },
+        {
+          "importance": 2,
+          "granter": "California Polytechnic State University",
+          "when": "2010",
+          "comments": "Highest GPA in mathematics coursework after three years",
+          "title": "Robert P. Balles Mathematics Award"
+        },
+        {
+          "importance": 4,
+          "granter": "Association for Computing Machinery",
+          "when": "2009",
+          "comments": "Three-person team programming tasks",
+          "title": "3rd Place in a Collegiate Regional Programming Contest"
+        },
+        {
+          "importance": 2,
+          "granter": "Boy Scouts of America",
+          "when": "2007",
+          "comments": "Troop 234 of Moraga, CA",
+          "title": "Eagle Scout Award"
+        },
+        {
+          "importance": 4,
+          "granter": "World Tae Kwon Do Federation",
+          "when": "2007",
+          "comments": "Kang's Tae Kwon Do Academy. Walnut Creek, CA",
+          "title": "Black Belt, First Degree"
+        }
+      ]
+    },
+    {
+      "section_name": "Programming",
+      "section_entries": [
+        {
+          "importance": 1,
+          "link": "https://github.com/j2kun/",
+          "name": "Portfolio",
+          "title": "Github Repository"
+        },
+        {
+          "importance": 2,
+          "name": "Languages",
+          "comments": "Languages I've written production code in",
+          "title": "Python, Java, HTML/CSS, Javascript/ES6, C++, Perl, SQL"
+        }
+      ]
+    },
+    {
+      "section_name": "Contract Work",
+      "section_entries": [
+        {
+          "title": "Impractical Python",
+          "importance": 2,
+          "when": "2018",
+          "comments": "Publication date: 2018-08-07",
+          "organization": "No Starch Press",
+          "type": "Technical Reviewer"
+        },
+        {
+          "title": "Doing Math with Python",
+          "importance": 2,
+          "when": "2014 - 2015",
+          "comments": "Publication date: 2015-05-25",
+          "organization": "No Starch Press",
+          "type": "Technical Reviewer"
+        },
+        {
+          "title": "QED Math Symposium",
+          "importance": 3,
+          "when": "2012 - 2015",
+          "link": "http://qed.wpcp.org/",
+          "organization": "Chicago Public Schools",
+          "type": "Webmaster"
+        }
+      ]
+    },
+    {
+      "section_name": "Other",
+      "section_entries": [
+        {
+          "importance": 1,
+          "link": "http://jeremykun.com",
+          "name": "Blog",
+          "comments": "In-depth presentation of technical topics with full implementations in code. As of February 2017: 236 published posts, 2000 word average post length, over 3.5 million page views since June 2011",
+          "title": "Math Intersect Programming"
+        }
+      ]
+    }
+  ]
 }
